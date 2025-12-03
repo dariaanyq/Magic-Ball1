@@ -24,6 +24,11 @@ button.onclick = () => {
         return;
     }
 
+    if (!text.endsWith("?")) {
+        ball.textContent = "Додай ?";
+        return;
+    }
+
     ball.classList.add("shake");
     setTimeout(() => ball.classList.remove("shake"), 400);
 
